@@ -303,7 +303,7 @@ def add_interest_to_account(accounts: list) -> None:
 
         print(f"Account name: {account.full_name}\n"
               f"Account type: {account.account_type}\n"
-              f"Updated balance is: ${account.get_balance_only()} with interest\n")
+              f"Updated balance is: ${account.get_balance_only():.2f} with interest\n")
 
 
 print(f"~~~~~~~~~~ Call add_interest_to_account ~~~~~~~~~~")
