@@ -28,6 +28,7 @@ class BankAccount:
         Args:
             full_name (str): The full name of the account holder.
             account_type (str): The options are "checking" or "savings."
+                By default, account_type is set to "checking."
         """
         self.full_name = full_name
         self.account_type = account_type
@@ -275,3 +276,35 @@ print("------------ Example 2 with Gene Belcher ------------")
 perform_bank_operations_gene(gene_account)
 print("------------ Example 3 with Louise Belcher ------------")
 perform_bank_operations_louise(louise_account)
+
+# # # # # # # # #  # # # Optional Stretch Challenge # # # # # # # # # # # # #
+# Create a list called: bank. Add all of your accounts to bank.
+# Write a function that loops over all accounts in the list and calls the
+# add_interest method of each.
+
+# Create a list called bank and add interest
+bank = [tina_account, gene_account, louise_account]
+
+
+def add_interest_to_account(accounts: list) -> None:
+    """
+    Loops over all accounts in the list and calls add_interest method on each.
+    Args:
+        accounts (list): List of bank account objects.
+
+    Returns:
+        None
+    """
+    for account in accounts:
+        if account.get_account_type() == "checking":
+            account.add_interest()
+        elif account.get_account_type() == "savings":
+            account.add_interest()
+
+        print(f"Account name: {account.full_name}\n"
+              f"Account type: {account.account_type}\n"
+              f"Updated balance is: ${account.get_balance_only()} with interest\n")
+
+
+print(f"~~~~~~~~~~ Call add_interest_to_account ~~~~~~~~~~")
+add_interest_to_account(bank)
