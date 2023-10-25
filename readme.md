@@ -1,7 +1,7 @@
 # Project title: Bank Account
 
 ## Description
-This python program simulates a bank account with a `BankAccount` class. The class has attributes for the account owner's full name, a unique 8-digit account number, and the account balance (which initially starts at $0). The `BankAccount` class contains methods to perform bank operations such as:
+This python program simulates a bank account with a `BankAccount` class. The class has attributes for the account owner's full name, account type (either checking or savings), a unique 8-digit account number, and the account balance (which initially starts at $0). The `BankAccount` class contains methods to perform bank operations such as:
 - Make a deposit
 - Make a withdrawal
 - Print a statement

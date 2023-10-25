@@ -7,6 +7,7 @@ class BankAccount:
 
     Attributes:
         full_name (str): The full name of the account holder.
+        account_type (str): The options are "checking" or "savings."
         balance (float): The current balance of the account.
         account_number (str): The unique account number associated with the account.
 
@@ -26,6 +27,7 @@ class BankAccount:
 
         Args:
             full_name (str): The full name of the account holder.
+            account_type (str): The options are "checking" or "savings."
         """
         self.full_name = full_name
         self.account_type = account_type
