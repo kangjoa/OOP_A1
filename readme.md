@@ -13,5 +13,5 @@ More details on the [assignment page](https://github.com/Tech-at-DU/ACS-1111-Obj
 - Python
 
 ## How to Run:
-- To run `BankAccount.py` and see the three examples for each bank account, go to terminal and type:
+- To run `BankAccount.py` and see the three examples for each bank account, go to terminal, navigate to directory where file is stored, and type:
   - `python3 BankAccount.py`
